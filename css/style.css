@@ -1,0 +1,32 @@
+.color-disponible {background-color: greenyellow}
+.color-pendiente {background-color:rgb(238, 139, 82)}
+.color-reservado {background-color:black}
+
+:root {
+  --ancho-asiento:12px;
+  --alto-asiento:12px;
+  --margen-asiento:1px;
+}
+
+.flex-container {
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+
+#zona-asientos{
+  width: 50%;
+}
+
+.zona > div {
+    box-sizing: border-box;
+    margin: var(--margen-asiento);
+    padding: 0px;
+    width: var(--ancho-asiento);
+    height: var(--alto-asiento);
+    /*background: #000 url("../img/noreservado.gif") no-repeat*/
+  }
+
+.margen-bajo-15{
+    margin-bottom: 15px;
+  }
